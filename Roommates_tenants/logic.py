@@ -4,7 +4,9 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 
-df = pd.read_csv(r"Apps\Roommates_tenants\dataset_tenants.csv", index_col = 'id_tenant')
+path = r"https://raw.githubusercontent.com/Smsantimaldonado/Data-Science-Portfolio/master/Roommates_tenants/dataset_tenants.csv"
+
+df = pd.read_csv(path, index_col = 'id_tenant')
 
 df.columns = ['time_of_the_day', 'biorhythm', 'education_level', 'read', 'animation', 
 'cinema', 'pets', 'cook', 'sport', 'diet', 'smoker',
